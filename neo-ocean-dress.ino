@@ -24,15 +24,21 @@ void setup() {
 }
 
 void loop() {
+  //light blue - dark blue 
   const int start_color1 = 100;
-  const int end_color1 = 170;
+  const int end_color1 = 180;
 
+  //yellow-green
   const int start_color2 = 44;
   const int end_color2 = 88;
+
+  //green - blue
+  const int start_color3 = 99;
+  const int end_color3 = 150;
   
   partial_rainbow(strip1, start_color1, end_color1);
   partial_rainbow(strip2, start_color2, end_color2);
-  partial_rainbow(strip3, start_color2, end_color2);
+  partial_rainbow(strip3, start_color3, end_color3);
   
   delay(300);
 }
