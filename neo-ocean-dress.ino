@@ -26,13 +26,13 @@ void setup() {
 void loop() {
   //light blue - dark blue 
   const int start_color1 = 100;
-  const int end_color1 = 180;
+  const int end_color1 = 170;
 
-  //yellow-green
-  const int start_color2 = 44;
-  const int end_color2 = 88;
+  //yellow-green-blue
+  const int start_color2 = 60;
+  const int end_color2 = 170;
 
-  //green - blue
+  //light blue - blue
   const int start_color3 = 99;
   const int end_color3 = 150;
   
@@ -40,7 +40,7 @@ void loop() {
   partial_rainbow(strip2, start_color2, end_color2);
   partial_rainbow(strip3, start_color3, end_color3);
   
-  delay(300);
+  delay(30);
 }
 
 void partial_rainbow(Adafruit_NeoPixel& strip, int start_color, int end_color) {
